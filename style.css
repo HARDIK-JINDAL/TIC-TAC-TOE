@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ac6dc9; /* Initial background color for the body */
+    color: #ecf0f1; /* Light cream text */
+    font-family: 'Arial', sans-serif;
+    animation: bodyBackgroundAnimation 10s ease-in-out infinite; /* Apply the opposite background animation */
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.heading button {
+    height: 50px;
+    width: 120px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    background-color: #a14876; /* Lighter dark pink button background */
+    color: #ecf0f1; /* Light cream text */
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.heading button:hover {
+    background-color: #b24396; /* Lighter pink on hover */
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+     /* Initial color for the container */
+    animation: containerBackgroundAnimation 10s ease-in-out infinite; /* Apply opposite color animation */
+}
+
+.game {
+    display: flex;
+    width: 330px;
+    height: 330px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Subtle shadow around the game */
+    background-color: #ab456c; /* Dark pink for the game area */
+}
+
+.game button {
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px; /* Bigger font size for X and O */
+    font-weight: bold;
+    background-color: #ac6dc9; /* Soft purple for button background */
+    color: #ecf0f1; /* Light cream text */
+    border-radius: 10px;
+    border: 2px solid #ac6dc9; /* Matching border color */
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.game button:hover {
+    background-color: #bd85b2; /* Lighter purple on hover */
+    box-shadow: 0 0 15px 5px rgba(189, 133, 178, 0.6); /* Glow effect */
+}
+
+.winner {
+    height: 100px;
+    width: 100%;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a95eae; /* Lighter pink background for the winner message */
+    color: #ecf0f1; /* Light cream text */
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+@keyframes borderAnimation {
+    0%, 100% {
+        background: #a95eae; /* Dark pink for the starting and ending color */
+        border: 12px solid #a95eae; /* Dark pink border */
+    }
+    25% {
+        background: #b24396; /* Lighter dark pink */
+        border: 12px solid #b24396; /* Same lighter dark pink border */
+    }
+    50% {
+        background: #a14876; /* Lighter purple-pink */
+        border: 12px solid #a14876; /* Same lighter purple-pink border */
+    }
+    75% {
+        background: #ab456c; /* Light pink */
+        border: 12px solid #ab456c; /* Same light pink border */
+    }
+}
+
+@keyframes containerBackgroundAnimation {
+    0%, 100% {
+        background: #a95eae; /* Light purple (opposite of dark pink) */
+    }
+    25% {
+        background: #b24396; /* Lighter pink (opposite of light dark pink) */
+    }
+    50% {
+        background: #a14876; /* Soft lavender (opposite of light purple-pink) */
+    }
+    75% {
+        background: #ab456c; /* Pale lavender (opposite of light pink) */
+    }
+}
+
+@keyframes bodyBackgroundAnimation {
+    0%, 100% {
+        background: #a95eae; /* Initial light purple background for the body */
+    }
+    25% {
+        background: #b24396; /* Light pink background for the body */
+    }
+    50% {
+        background: #a14876; /* Soft lavender background for the body */
+    }
+    75% {
+        background: #ab456c; /* Pale lavender background for the body */
+    }
+}
+
+.border {
+    border: 12px solid #ab456c; /* Dark pink border */
+    padding: 40px;
+    margin-top: 100px;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6); /* Initial shadow */
+    background: #192e5b; /* Dark background for the border class */
+    animation: borderAnimation 10s ease-in-out infinite; /* Smooth animation for background and border */
+}
