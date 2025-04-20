@@ -4,11 +4,13 @@ A simple and interactive **Tic Tac Toe** game built using **HTML, CSS, and JavaS
 
 ---
 
-# 🌐 Live Demo
+## 🌐 Live Demo
 
 Check out the live demo of the game: 
 
 [🌐 Live Demo - Tic-Tac-Toe](https://hardik-jindal.github.io/TIC-TAC-TOE/)
+
+---
 
 ## ✨ Features
 
